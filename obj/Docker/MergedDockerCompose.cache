@@ -1,0 +1,56 @@
+services:
+  ecommerce.api.customers:
+    build:
+      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      dockerfile: ECommerce.Api.Customers\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapicustomers
+    ports:
+    - published: 6002
+      target: 80
+    volumes:
+    - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  ecommerce.api.orders:
+    build:
+      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      dockerfile: ECommerce.Api.Orders\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapiorders
+    ports:
+    - published: 6003
+      target: 80
+    volumes:
+    - C:\Users\DEBASIS\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  ecommerce.api.products:
+    build:
+      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      dockerfile: ECommerce.Api.Products\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapiproducts
+    ports:
+    - published: 6001
+      target: 80
+    volumes:
+    - C:\Users\DEBASIS\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  ecommerce.api.search:
+    build:
+      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      dockerfile: ECommerce.Api.Search\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Services__Customers: http://ecommerce.api.customers
+      Services__Orders: http://ecommerce.api.orders
+      Services__Products: http://ecommerce.api.products
+    image: ecommerceapisearch
+    ports:
+    - published: 6004
+      target: 80
+    volumes:
+    - C:\Users\DEBASIS\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+version: '3.4'
