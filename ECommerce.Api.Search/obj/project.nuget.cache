@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PndN/5IK76fiGIXLHiC3TSUAPgkoztKDTV1t/krQG18k/AfQM/lKziIRkoj/AKMw29QU8aXSWCD5VXomC4f9rQ==",
+  "dgSpecHash": "ZQ9FPLfTWHsy3qTxHAb8Uwn0pw4SG8JwVoZ95RrEqtCUSk4SKQq0jtwTtLplas6sc+PzKLVbJ3ydyNDuUYzNpA==",
   "success": true,
-  "projectFilePath": "D:\\Personal_Code_work\\debasis-saha\\event-code-demos\\azure-microservice-dotnetcore\\ECommerce_MicroService_Demo\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
+  "projectFilePath": "D:\\Personal_Code_work\\saha-debasis\\ECommerceDemo\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DEBASIS\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\DEBASIS\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",

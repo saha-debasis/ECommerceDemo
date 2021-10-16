@@ -1,7 +1,7 @@
 services:
   ecommerce.api.customers:
     build:
-      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      context: D:\Personal_Code_work\saha-debasis\ECommerceDemo
       dockerfile: ECommerce.Api.Customers\Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -13,7 +13,7 @@ services:
     - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
   ecommerce.api.orders:
     build:
-      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      context: D:\Personal_Code_work\saha-debasis\ECommerceDemo
       dockerfile: ECommerce.Api.Orders\Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -26,7 +26,7 @@ services:
     - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
   ecommerce.api.products:
     build:
-      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      context: D:\Personal_Code_work\saha-debasis\ECommerceDemo
       dockerfile: ECommerce.Api.Products\Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -39,7 +39,7 @@ services:
     - C:\Users\DEBASIS\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
   ecommerce.api.search:
     build:
-      context: D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo
+      context: D:\Personal_Code_work\saha-debasis\ECommerceDemo
       dockerfile: ECommerce.Api.Search\Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development

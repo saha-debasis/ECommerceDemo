@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ECommerce.Api.Search
-build_property.ProjectDir = D:\Personal_Code_work\debasis-saha\event-code-demos\azure-microservice-dotnetcore\ECommerce_MicroService_Demo\ECommerce.Api.Search\
+build_property.ProjectDir = D:\Personal_Code_work\saha-debasis\ECommerceDemo\ECommerce.Api.Search\

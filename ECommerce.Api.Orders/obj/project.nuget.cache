@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1kF9+3SDvQCNBYPybvm/2x9b6xM7oLrFNxRG4zu++4QvyKPYDG/804iGI6JzH35/y6z7/Dlt3TAkUa/c3XFebA==",
+  "dgSpecHash": "UMljkSb+up+7CwU6s0kx6reqZT8NuocVsfczCWVXayFzjyk2OSJ9z60dW4396qyQCfnqGlyvuRsVYmuQLsk8Vw==",
   "success": true,
-  "projectFilePath": "D:\\Personal_Code_work\\debasis-saha\\event-code-demos\\azure-microservice-dotnetcore\\ECommerce_MicroService_Demo\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
+  "projectFilePath": "D:\\Personal_Code_work\\saha-debasis\\ECommerceDemo\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DEBASIS\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\DEBASIS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
